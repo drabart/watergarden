@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Podlewanie ogrodu</title>
+    <link href="static/style.css" rel="stylesheet" />
+    <link rel="icon" href="https://cdn-icons.flaticon.com/png/512/3350/premium/3350712.png?token=exp=1650437511~hmac=a8d1dfcb919300558470507fe5f59e12" type="image/x-icon">
+</head>
+<body>
+    <div class="button-array">
+        <form action="/" method="POST">
+            {% if dict['pump_on'] == 'true' %}
+            <input type="submit" class="simple-button on" name="pump_on" value="Pompa">
+            {% else %}
+            <input type="submit" class="simple-button off" name="pump_on" value="Pompa">
+            {% endif %}
+        </form>
+        <form action="/" method="POST">
+            {% if dict['tuje_open'] == 'true' %}
+            <input type="submit" class="simple-button on" name="tuje_open" value="Zawór tuje">
+            {% else %}
+            <input type="submit" class="simple-button off" name="tuje_open" value="Zawór tuje">
+            {% endif %}
+        </form>
+        <form action="/" method="POST">
+            {% if dict['taras_open'] == 'true' %}
+            <input type="submit" class="simple-button on" name="taras_open" value="Zawór taras">
+            {% else %}
+            <input type="submit" class="simple-button off" name="taras_open" value="Zawór taras">
+            {% endif %}
+        </form>
+        <form action="/" method="POST">
+            {% if dict['tyl_open'] == 'true' %}
+            <input type="submit" class="simple-button on" name="tyl_open" value="Zawór tył">
+            {% else %}
+            <input type="submit" class="simple-button off" name="tyl_open" value="Zawór tył">
+            {% endif %}
+        </form>
+    </div>
+
+    <div class="footer">
+        <a class="better-link" href="/logout">Logout</a>
+    </div>
+</body>
+</html>
