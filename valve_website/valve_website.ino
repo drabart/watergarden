@@ -6,8 +6,8 @@
 #define taras_open D2
 #define tyl_open D3
 
-const char *ssid = "UPC5671009";
-const char *pass = "r5wxdspekybX";
+const char *ssid = "wifi name";
+const char *pass = "wifi password";
 String host = "http://watergarden.ga";
 
 struct variable {
